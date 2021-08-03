@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<title>Scenario Editor</title>
+</head>
+
+<body>
+	<H1>Scenario Editor</H1>
+
+	<div>
+		<input type="file" name="scenario" id="scenario">
+		<button id="save">Save</button>
+	</div>
+	<div>
+		<label for="line">Enter a new line:</label>
+		<input type="text" name="line" id="line">
+		<button id="add">Add line</button>
+	</div>
+
+	<ol>
+
+	</ol>
+
+	<template id="listItem">
+		<li draggable="true" class="drapzone">
+			<p>
+				<span id="text"></span>
+				<button id="remove"></button>
+			</p>
+			<p id="naxt">
+				<span>next : object</span>
+				<select name="scene" id="scene">
+					<option value="1">Title</option>
+					<option value="2">Menu</option>
+					<option value="3">View</option>
+					<option value="4">Talk</option>
+					<option value="5">Branch</option>
+				</select>
+				<input type="file" name="url" id="url">
+			</p>
+			<p id="actors">
+				<span>actors : array</span>
+				<input type="text" name="process" id="process">
+				<input type="text" name="asset-name" id="asset-name">
+				<p>
+					<input type="number" name="sx" id="sx">
+					<input type="number" name="sy" id="sy">
+					<input type="number" name="sw" id="sw">
+					<input type="number" name="sh" id="sh">
+				</p>
+				<p>
+					<input type="number" name="dx" id="dx">
+					<input type="number" name="dy" id="dy">
+					<input type="number" name="dw" id="dw">
+					<input type="number" name="dh" id="dh">
+				</p>
+				<p>
+					<input type="text" name="tag" id="tag">
+					<button>Add tag</button>
+				</p>
+				<p>
+					<input type="number" name="opacity" id="opacity">
+				</p>
+			</p>
+			<p id="scenarios">
+				<input type="text" name="actor-name" id="actor-name">
+				<input type="text" name="active-actor" id="active-actor">
+				<p id="messase">
+					<input type="text" name="messase" id="messase">
+				</p>
+			</p>
+		</li>
+	</template>
+	<script src="scenario-editor.js" defer></script>
+</body>
+</html>
