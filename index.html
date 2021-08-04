@@ -32,6 +32,8 @@
 				<span id="text"></span>
 				<button id="remove"></button>
 			</p>
+
+			<!--　▽　nextオブジェクトの要素　▽　-->
 			<p id="naxt">
 				<span>next : object</span>
 				<select name="scene" id="scene">
@@ -43,37 +45,88 @@
 				</select>
 				<input type="file" name="url" id="url">
 			</p>
+			<!--　△　nextオブジェクトの要素　△-->
+
+			<!--　▽　actors配列の要素　▽　-->
 			<p id="actors">
 				<span>actors : array</span>
 				<input type="text" name="process" id="process">
 				<input type="text" name="asset-name" id="asset-name">
+				
+				<input type="number" name="sx" id="sx">
+				<input type="number" name="sy" id="sy">
+				<input type="number" name="sw" id="sw">
+				<input type="number" name="sh" id="sh">
+			
+				<input type="number" name="dx" id="dx">
+				<input type="number" name="dy" id="dy">
+				<input type="number" name="dw" id="dw">
+				<input type="number" name="dh" id="dh">
+				
+				<input type="text" name="tag" id="tag">
+				<button>Add tag</button>
+			
+				<input type="number" name="opacity" id="opacity">
+
+			</p>
+			<!--　△　actors配列の要素　△　-->
+
+			<!--　▽　scenarios配列の要素　▽　-->
+			<p id="scenarios">
+				<span>scenarios : array</span>
+				<input type="text" name="actor-name" id="actor-name">
 				<p>
-					<input type="number" name="sx" id="sx">
-					<input type="number" name="sy" id="sy">
-					<input type="number" name="sw" id="sw">
-					<input type="number" name="sh" id="sh">
+					<input type="text" name="active" id="active">
+					<button>Add active</button>
 				</p>
+				
 				<p>
-					<input type="number" name="dx" id="dx">
-					<input type="number" name="dy" id="dy">
-					<input type="number" name="dw" id="dw">
-					<input type="number" name="dh" id="dh">
+				<input type="text" name="messase" id="messase">
+				<button>Add message</button>
 				</p>
+				
+				<p>
+					<input type="text" name="targets" id="targets">
+					<button name="add-target" id="add-target">Add target</button>
+				</p>
+
 				<p>
 					<input type="text" name="tag" id="tag">
-					<button>Add tag</button>
+					<select name="action-name" id="action-name">
+						<option value="move">Move</option>
+						<option value="fadeIn">Fadein</option>
+						<option value="fadeOut">Fadeout</option>
+					</select>
+					<button>Add do</button>
+					<button>Add action</button>
 				</p>
+
 				<p>
-					<input type="number" name="opacity" id="opacity">
+					<input type="text" name="sound-name" id="sound-name">
+					<select name="loop" id="loop">
+						<option value="true">true</option>
+						<option value="false">false</option>
+					</select>
+					<select name="swithc" id="swithc">
+						<option value="true">true</option>
+						<option value="true">true</option>
+					</select>
+					<button>Add sound</button>
+				</p>
+
+				<p>
+					<input type="text" name="nFont" id="nFont">
+					<input type="color" name="nColor" id="nColor">
+					<input type="number" name="nX" id="nX">
+					<input type="number" name="mFont" id="mFont">
+					<input type="color" name="mColor" id="mColor">
+					<input type="number" name="mX" id="mX">
+					<input type="number" name="mY" id="mY">
+					<input type="number" name="messageSpace" id="messageSpace">
 				</p>
 			</p>
-			<p id="scenarios">
-				<input type="text" name="actor-name" id="actor-name">
-				<input type="text" name="active-actor" id="active-actor">
-				<p id="messase">
-					<input type="text" name="messase" id="messase">
-				</p>
-			</p>
+			<!--　△　scenairos配列の要素　△　-->
+
 		</li>
 	</template>
 	<script src="scenario-editor.js" defer></script>
