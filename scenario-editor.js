@@ -1,19 +1,6 @@
 'use strict';
 
-class Next {
-	constructor(scene = 0, url = '') {
-		this.scene = scene;
-		this.url = url;
-	}
-}
 
-class ScenarioActorScene {
-	constructor(actors,scenarios) {
-		this.actors=actors;
-		this.scenarios=scenarios;
-	}
-}
-const scenarioActorScene = new ScenarioActorScene();
 
 // 追加ボタンを押したときに文を一行追加する
 const add = document.querySelector("#add");
